@@ -12,9 +12,11 @@ namespace M2_TestS1
         {
             SharedLogging.Logger logger = new SharedLogging.Logger();
             logger.WriteToFile("D:\\test.log", "I'm testing local logging from Solution M1");
-
+            
             Helper.SharedHelper helper = new Helper.SharedHelper();
             Console.WriteLine(helper.GetLength("hello"));
+
+            Console.ReadLine();
         }
     }
 }
